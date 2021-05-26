@@ -1,3 +1,5 @@
+# Could also be named "Dealer"
+
 class Shuffler
   attr_accessor :deck
 

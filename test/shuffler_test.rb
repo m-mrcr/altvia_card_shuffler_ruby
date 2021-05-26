@@ -4,6 +4,8 @@ require './lib/shuffler'
 require './lib/deck'
 require './lib/card'
 
+# Could also be named DealerTest
+
 class ShufflerTest < MiniTest::Test
   def setup
     @ace_of_hearts = Card.new("ace", "hearts")
