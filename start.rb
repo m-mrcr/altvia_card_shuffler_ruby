@@ -5,8 +5,6 @@ require './lib/card'
 
 ranks = ['2','3','4','5','6','7','8','9','10','Jack','Queen','King','Ace']
 suits = ['Hearts', 'Spades', 'Diamonds', 'Clubs']
-# ranks = ['2','3','4']
-# suits = ['hearts', 'spades']
 deck = Deck.new(ranks.flat_map { |rank| suits.map { |suit| Card.new(rank, suit) } })
 shuffler = Shuffler.new(deck)
 
