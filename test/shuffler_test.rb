@@ -21,10 +21,10 @@ class ShufflerTest < MiniTest::Test
     assert_equal @deck, @shuffler.deck
   end
 
-  def test_it_can_shuffle_riffle_style
+  def test_it_can_shuffle
     old_deck = @shuffler.deck.clone
     assert_equal old_deck.cards, @shuffler.deck.cards
-    @shuffler.riffle
+    @shuffler.shuffle
     refute_equal old_deck.cards, @shuffler.deck.cards
   end
 end
